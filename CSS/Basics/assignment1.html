@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment1</title>
+    <link rel="stylesheet" href="assign1.css">
+    <!--We should link external css file in the head-->
+
+
+
+    <!-- <style>
+        /* Class can be targeted by '.class_name' */
+.red{
+    background-color: darkred;
+    color: snow;
+}
+/* ID can be targeted by '#ID' */
+.blue{
+    color: blue;
+}
+#shaids{
+    font-weight: bolder;
+    font-style: italic;
+    color: chocolate;
+}
+    </style> -->
+
+<!--css can also be mentioned in style tag try out-->
+</head>
+<body>
+<div class="red blue">
+    SHAIDS is op
+</div>
+<div id="shaids"><!--ID can only br givent to one element,thus it should be unique for all elements-->
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. At eius odit praesentium vero expedita laboriosam modi, beatae, blanditiis, distinctio libero hic deleniti! Illo sed optio voluptate commodi repellendus iste qui!
+</div>
+<!-- Single class can be assigned to multiple elements below red is name of the class-->
+<span class="red">
+    Lorem ipsum dolor sit amet consectetur 
+    <span class="blue"> elit. Natus hic quae vel numquam commodi, vero nobis excepturi aperiam
+    </span><!--Blue is the class for this object so properties of red would not be applied-->
+     repudiandae incidunt accusamus cupiditate dolores, pariatur officia illum. Reiciendis autem eum officiis.
+</span>
+</body>
+</html>

@@ -1,0 +1,14 @@
+/* Class can be targeted by '.class_name' */
+.red{
+    background-color: darkred;
+    color: snow;
+}
+/* ID can be targeted by '#ID' */
+.blue{
+    color: blue;
+}
+#shaids{
+    font-weight: bolder;
+    font-style: italic;
+    color: chocolate;
+}
