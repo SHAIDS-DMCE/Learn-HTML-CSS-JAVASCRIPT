@@ -1,0 +1,50 @@
+*{
+margin: 0;
+padding: 0;
+}/* These attributes set to all elements which are not mentioned in this file */
+.red
+{
+    color: red;
+    background: rgb(3, 3, 139);
+    height: 90px;
+    background-image: url('https://source.unsplash.com/user/erondu/1000x1000');
+    background-repeat: no-repeat;
+    background-size: 172px 93px;
+    background-position: right center;/* we can give any attribute here according to our prefrence where to align */
+}
+.green
+{
+    background-color: black;
+    color: greenyellow;
+}
+.naam{
+    font-weight: bolder;
+    color: rgb(6, 0, 0);
+    background-color: black;
+    height: 350px;
+    width: 100vw ;
+    background-image: url('800.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;/*COVER:-it will just cover the whole background disturbing the aspect ratio.......CONTAIN:-it ill try to cover as much as possible showing the whole background image in frame......auto:- will just sho the image as per aspect ratio */
+    border: 2px solid red;
+}
+.attachment{
+    background-color: brown;
+    font-weight: bolder;
+    height: 800px;
+    width: 100vw;
+    font-style: italic;
+    border: 3px solid orange;
+    background-image: url('Bench-Background-48-1600x1000.jpg');
+    background-repeat: no-repeat;
+    background-size: 400px 200px;
+    background-position: center bottom ;
+    background-attachment:fixed;
+    color: rgb(3, 53, 53);
+
+}
+.shorthand
+{
+    background-color: cornflowerblue;
+    color: black;
+}
