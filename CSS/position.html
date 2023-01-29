@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <STYLE>
+        *{
+         margin: 0;
+         padding: 0;
+        }
+        .head{
+            display:inline;
+            padding:50px;
+            margin: 120px;
+        }
+        header{
+            background-color: black;
+            color: whitesmoke;
+            height: 70px;
+            position:sticky;
+            top:0;
+            /* until and unless the top offset is crossed it will mainatin its initial position */
+            z-index: 2;
+            /* z index creates a depth effect by creating third dimension axis */
+        }
+        p{
+            text-align: center;
+        }
+        .block{
+            background-color: greenyellow;
+            height: 50vh;
+            width: 50vw;
+            margin: auto;
+            /* z-index: 1; */
+        }
+        .box{
+            background-color: cornflowerblue;
+            height: 120px;
+            width: 150px;
+            padding: 30px 20px;
+            /* position: static; */
+            /* top left right will not work for static */
+            position: fixed; 
+            /* it will stay fixed to that position and will not be affected due to scrolling */
+            /* position: relative; */
+            /* only if the position is relative the effect will only bee seen after tiop left right or else it will maintain its initial position */
+            top: 70px;
+            left: 1000px;
+            /* position:absolute; aligns with respect to previous non static parent*/
+            padding-top: 50px;
+            font-weight: 500;
+        }
+        body{
+            height: 4444px;
+        }
+        .fruits{
+        position: relative;
+        top: 196px;
+        left: 300px;
+        background-color: goldenrod;
+        font-size: 30px;
+        list-style: disc inside;
+        }
+    </STYLE>
+</head>
+
+    <header>
+        <nav>
+            <ul>
+                <li class="head">HOME</li>
+                <li class="head">ABOUT</li>
+                <li class="head">CONTACT</li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+    <div class="block">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eius minima corporis, obcaecati praesentium ea, officia eligendi ducimus est hic laudantium quibusdam doloribus iste repellendus esse laborum quo perspiciatis fugiat.</p>
+        <div class="box">
+            MAVERICK OP
+        </div>
+    </div>
+    <ul>
+        <li class="fruits">Apple</li>
+        <li class="fruits">Banana</li>
+        <li class="fruits">Orange</li>
+    </ul>
+       
+</body>
+</html>
