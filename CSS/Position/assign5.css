@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    padding: 20px 0px;
+}
+.head{
+    background-color:rgb(0, 0, 0);
+    display: inline;
+    padding:2vh;
+    margin: 8vw;
+    margin-top: 10px;
+    font-size: 1.5vw;
+    /* position: sticky;
+    top: 0; */
+}
+a{
+    color: darkorange;
+    text-decoration: none;
+}
+/* nav{
+    position: sticky;
+    top: 0;
+} */
+.box{
+    background-color: gold;
+    height: 200vh;
+    width: 100%;
+    min-height: 2000px;
+}
