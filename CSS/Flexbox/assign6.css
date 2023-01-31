@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: black;
+    color: white;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin:30px;
+    padding: 0px 20px;
+}
+ul li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+}
+.red{
+    height: 100px;
+    background: red;
+    margin:30px 30px 30px 0px;
+    padding: 20px;
+    text-align: center;
+}
+.gold{
+    background-color: gold;
+    margin:30px 0px 30px 30px;
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+}

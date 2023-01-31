@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background-color: rgb(0, 0, 0);
+    height: 50vh;
+    /* margin: 40px;
+    padding: 30px; */
+    display: flex;
+    /* in flex default is row wise arrangement */
+    flex-direction: row-reverse;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-content: center;
+}
+
+.box1{
+    height: 10vh;
+    width: 10vw;
+    background-color: cadetblue;
+    /* float: right; */
+    border: 2px solid goldenrod;
+    /* padding: 20px; */
+    margin:0px 10px;
+    /* order: 5; */
+    /* We can change order */
+    flex-grow: 3;
+    /* we can grow or shrink in case of any overflow */
+}
+.box2{
+    height: 10vh;
+    width: 10vw;
+    background-color: rgb(151, 4, 171);
+    /* clear: both; */
+    border: 2px solid goldenrod;
+}
