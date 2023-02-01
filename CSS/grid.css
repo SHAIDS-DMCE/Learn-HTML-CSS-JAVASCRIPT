@@ -1,0 +1,49 @@
+
+        *{margin: 0;
+        padding: 0;
+        }
+        .container{
+            height: 80vh;
+            background-color: rgb(148, 174, 102);
+            display: grid;
+            /* grid-row-gap:40px;
+            grid-column-gap:50px ; */
+            grid-gap: 50px;
+            grid-template-columns: auto auto auto;
+            /* used for genrating columns and edit them 
+            /* grid-template-rows: 100px 100px 100px; */
+            /* used for genrating rows [default] and edit them 
+            /* justify-content: center; */
+            /* align-content: center; */
+        }
+        .item{
+            background-color: rgb(0, 123, 255);
+            border: 2px solid black;
+            color: aliceblue;
+            text-align: center;
+            padding: 30px 10px;
+        }
+        @media screen and (max-width:800px) {
+            .item{
+                background-color: black;
+            }
+            .container{
+                background-color: gold;
+                align-content: center;
+                justify-content: center;
+                grid-template-columns: 100px 100px;
+            }
+            
+        }
+        @media screen and (max-width:600px) {
+            .item{
+                background-color: rgb(0, 6, 121);
+            }
+            .container{
+                background-color: rgb(241, 21, 238);
+                /* align-content: center;
+                justify-content: center; */
+                grid-template-columns: 150px 150px auto;
+                
+            }
+        }
