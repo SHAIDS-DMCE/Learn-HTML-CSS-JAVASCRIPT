@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: black;
+        }
+        img{
+            width: 400px ;
+            height: 200px;
+            transition: height 3s ease-in-out,width 3s cubic-bezier(.29, 1.01, 1, -0.68);
+            /* transition-property: width;
+            transition-duration: 3s;
+            transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68); */
+            /* transition-timing-function: ease-in;.......slow start fast end */ 
+        transition-timing-function: steps(6, end); /* 6 steps*/
+        /* transition-delay: 3s; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="imgo" src="https://source.unsplash.com/user/erondu/500x100">
+    </div>
+    <button id="btn">TOGGLE</button>
+</body>
+<script>
+    imgo.style.width = "400px";
+    imgo.style.height = "200px";
+
+    btn.addEventListener("click", ()=>{
+        // imgo.style.width = "546px";
+        if(imgo.style.width === '546px')
+        {
+            imgo.style.width = "400px";
+        }
+        else if(imgo.style.width === '400px')
+        {
+            imgo.style.width = "546px";
+        }
+
+    })
+</script>
+</html>

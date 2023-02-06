@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+       *{
+margin: 0;
+padding: 0;
+       }
+       .container{
+            background-color: black;
+            color: gold;
+            height: 80vh;
+        }
+        .box{
+            font-weight: bold;
+            font-size: 20px;
+            border: 2px solid rgb(78, 255, 25);
+            transform-origin: 0;
+            transform: translate(120px,50px);
+        /* transform: translate(120px,50px) rotate(30deg); */
+        /* transform: scaleX(3) scaleY(3); */
+            transform: skew(30deg,4deg);
+        }
+        img{
+            margin: 100px 0px;
+            margin-left: 50px;
+        }
+        #foot{
+            width: auto;
+            height: auto;
+            position: relative;
+            bottom: 72px;
+            transition-property: width;
+            transition-duration: 2s;
+        transition-property: margin-right, color;
+        }
+        .foot:hover{
+            visibility: hidden;
+        } 
+        footer{
+            height:200px;
+            background-color: cadetblue;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo aspernatur iste, nihil nemo voluptates facilis, porro quod quas laboriosam obcaecati magnam temporibus optio quibusdam. Quasi voluptate quibusdam consectetur atque praesentium repellat amet, reprehenderit illum quidem eveniet error laborum cum quisquam, quis alias earum qui quaerat, in maiores inventore odio? Nisi.
+                https://source.unsplash.com/user/erondu/500x100"
+        </div>
+        <img src="https://source.unsplash.com/user/erondu/500x100">
+    </div>
+    <footer>
+        <img id="foot" src="vedant1.jpg">
+    </footer>
+</body>
+</html>
